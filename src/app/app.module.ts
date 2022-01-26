@@ -21,6 +21,11 @@ import { FormsModule } from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -31,7 +36,10 @@ import { MatNativeDateModule } from '@angular/material/core';
     ContactUsComponent,
     RegisterComponent,
     LoginComponent,
-    MainHeaderComponent
+    MainHeaderComponent,
+    UserProfileComponent,
+    EditProfileComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +55,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     FormsModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatToolbarModule,
+    MatIconModule
 
   ],
   providers: [],

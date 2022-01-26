@@ -5,8 +5,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { MainHeaderComponent } from './main-header/main-header.component';
 
 const routes: Routes = [
+  { path: 'toolbar', component: MainHeaderComponent},
   { path: 'home', component: HomeComponent },
   { path: 'aboutus', component: AboutUsComponent },
   { path: 'contactus', component: ContactUsComponent },
